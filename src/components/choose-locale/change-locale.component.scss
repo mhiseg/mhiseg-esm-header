@@ -1,0 +1,24 @@
+@import "../../root.scss";
+
+.labelselect label {
+  color: $labeldropdown;
+}
+.flagComponent{
+  margin-top: 0.5em;
+}
+.flagSelected{
+  background: none;
+  border: none;
+color: white;
+font-size:large;
+
+  }
+  .flagSelectedOption{
+
+    background-color: $brand-01;
+    border: none;
+    font-size: large;
+  }
+.flag-label{
+  height: 2em;
+}

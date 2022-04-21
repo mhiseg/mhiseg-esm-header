@@ -1,0 +1,26 @@
+@import '../../root.scss';
+
+.topNavActionSlot {
+  display: flex;
+}
+
+$feature-flags: (grid-columns-16: true,
+);
+
+.HeaderGlobalBar {
+  margin: 8px;
+  color: $ui-background;
+  cursor: pointer;
+}
+
+.navbarHeader {
+  background-Color: $brand-01;
+}
+
+
+.userAvatar {
+  margin-right: 5px;
+}
+.grid{
+  display: inline;
+}
