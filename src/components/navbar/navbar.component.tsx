@@ -91,8 +91,6 @@ const Navbar: React.FC<NavbarProps> = ({ user, onLogout, allowedLocales, session
         <AppMenuPanel expanded={isActivePanel('appMenu')} />
 
         <UserMenuPanel
-          user={user}
-          allowedLocales={allowedLocales}
           session={session}
           expanded={isActivePanel('userMenu')}
           onLogout={onLogout}

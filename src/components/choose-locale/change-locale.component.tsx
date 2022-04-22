@@ -19,8 +19,7 @@ const ChangeLocale: React.FC<ChangeLocaleProps> = ({ allowedLocales, user, postU
   const [userProps, setUserProps] = useState(user.userProperties);
   const options = allowedLocales?.map(locale => <option className={styles.flagSelectedOption}
     value={locale} selected={user.userProperties.defaultLocale == locale ? true : false} >
-    {(countryFlagEmoji.get(locale == 'en' ? 'us' : locale))['emoji']} {locale}
-  </option>);
+    {(countryFlagEmoji.get(locale == 'en' ? 'us' : locale))['emoji']} {locale}</option>);
 
   useEffect(() => {
     if (user.userProperties.defaultLocale !== userProps.defaultLocale) {

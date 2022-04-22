@@ -1,27 +1,32 @@
 @import '../../root.scss';
+
 .usernameInfoValue {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  .userInfoFonction {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-weight: lighter;
-  }
-  .HeaderUserInfo{
-    display:contents;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
 }
+
+.userInfoFonction {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.HeaderUserInfo {
+  display: contents;
+}
+
 .HeaderUserInfoTile {
-background: none;
-margin-top: -15px;
-height: 20px;
+  background: none;
+  margin-top: -15px;
+  height: 20px;
 }
-.userAvatar{
+
+.userAvatar {
   margin-right: 4px;
 }
-.langageDropdown{
+
+.langageDropdown {
   z-index: 1;
   background-color: $brand-01;
   color: $ui-background;

@@ -12,14 +12,14 @@ import ChangeLocale from '../choose-locale/change-locale.component';
 
 function HeaderUserInfo({ user, onClickChange, allowedLocales }) {
 
-  return ( console.log(allowedLocales),
+  return ( console.log(user),
     <div className={styles.HeaderUserInfo}  >
       <UserAvatarFilledAlt32 onClick={onClickChange} className={styles.userAvatar} />
       <Tile className={styles.HeaderUserInfoTile} onClick={onClickChange}>
         <Row>
           <Column>
             <Row className={styles['usernameInfoValue']}>{user.person.display}</Row>
-            <Row className={styles['userInfoFonction']}> {user['roles'][0].display}</Row>
+            <Row className={styles['userInfoFonction']}> { (user.systemId).split("-")[0]}</Row>
           </Column>
 
         </Row>

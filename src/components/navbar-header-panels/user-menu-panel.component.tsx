@@ -6,13 +6,12 @@ import { LoggedInUser, UserSession } from '../../types';
 import root from '../../root.scss';
 
 interface UserMenuPanelProps extends HeaderPanelProps {
-  user: LoggedInUser;
-  allowedLocales: any;
+ 
   onLogout(): void;
   session: UserSession;
 }
 
-const UserMenuPanel: React.FC<UserMenuPanelProps> = ({ expanded, user, allowedLocales, onLogout, session }) => {
+const UserMenuPanel: React.FC<UserMenuPanelProps> = ({ expanded, onLogout, session }) => {
   return (
     <HeaderPanel
       className={root.headerPanel}
@@ -21,7 +20,6 @@ const UserMenuPanel: React.FC<UserMenuPanelProps> = ({ expanded, user, allowedLo
       <ExtensionSlot
         extensionSlotName="user-panel-slot"
         state={{
-          user: user,
           onLogout: onLogout
         }}
       />
