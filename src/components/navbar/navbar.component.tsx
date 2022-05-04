@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Switcher20 from '@carbon/icons-react/lib/switcher/20';
 import Close20 from '@carbon/icons-react/lib/close/20';
 import UserMenuPanel from '../navbar-header-panels/user-menu-panel.component';
@@ -44,8 +44,6 @@ const Navbar: React.FC<NavbarProps> = ({ user, onLogout, allowedLocales, session
 
     return (
       <Header aria-label="OpenMRS" className={styles.navbarHeader}>
-
-
         <HeaderLink
           prefix=""
           onClick={
@@ -56,6 +54,7 @@ const Navbar: React.FC<NavbarProps> = ({ user, onLogout, allowedLocales, session
           }
         >
           <Logo />
+
         </HeaderLink>
 
         <HeaderGlobalBar >

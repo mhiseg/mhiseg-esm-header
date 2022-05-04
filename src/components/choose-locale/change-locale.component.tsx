@@ -18,7 +18,8 @@ export interface ChangeLocaleProps {
 const ChangeLocale: React.FC<ChangeLocaleProps> = ({ allowedLocales, user, postUserProperties }) => {
   const [userProps, setUserProps] = useState(user.userProperties);
   const options = allowedLocales?.map(locale => <option className={styles.flagSelectedOption}
-    value={locale} selected={user.userProperties.defaultLocale == locale ? true : false} >
+    value={locale}
+    selected={user.userProperties.defaultLocale == locale ? true : false} >
     {(countryFlagEmoji.get(locale == 'en' ? 'us' : locale))['emoji']} {locale}</option>);
 
   useEffect(() => {
@@ -30,7 +31,7 @@ const ChangeLocale: React.FC<ChangeLocaleProps> = ({ allowedLocales, user, postU
   }, [userProps]);
 
   return (
-    <div className={styles.flagComponent}>
+    <div className={styles.flagComponent} >
       <select
         className={styles.flagSelected}
         onChange={event => setUserProps({ ...userProps, defaultLocale: event.target.value })}

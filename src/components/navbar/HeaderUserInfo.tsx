@@ -12,7 +12,7 @@ import ChangeLocale from '../choose-locale/change-locale.component';
 
 function HeaderUserInfo({ user, onClickChange, allowedLocales }) {
 
-  return ( console.log(user),
+  return (
     <div className={styles.HeaderUserInfo}  >
       <UserAvatarFilledAlt32 onClick={onClickChange} className={styles.userAvatar} />
       <Tile className={styles.HeaderUserInfoTile} onClick={onClickChange}>
